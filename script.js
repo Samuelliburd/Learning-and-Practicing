@@ -73,8 +73,20 @@ function toggleUnderline(){
 function addClass(){
  const el =
 document.getElementById("turnX");
- el.classList.addElement("red-text")
+ el.classList.add("red-text");
 }
+
+const langSelect =
+document.getElementById("langSelect").value;
+
+function showSelected(){
+	const paragraph =
+	document.getElementById("langResult");
+	const selectedOption =
+	document.getElementById("langSelect").value;
+	paragraph.innerHTML = "You speak: " + selectedOption;
+}
+
 
 // Notes
 

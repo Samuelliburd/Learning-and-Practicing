@@ -40,25 +40,42 @@
 <br>
 <span>County:</span>
 <input type="text">
+
 <br>
+
+<span>Spoken Language:</span>
+
+<select name="Langauge" id="langSelect">
+  <option selected disabled value="Select langauge">Select langauge</option>
+  <option value="english">English</option>
+  <option value="french">French</option>
+  <option value="german">German</option>
+  <option value="spanish">Spanish</option>
+  <option value="italian">Italian</option>
+</select>
+
+<button onClick="showSelected()">Submit</button>
+
+<p id="langResult"></p>
+
 <br>
+
 <h2>Login</h2>
-<span>Username:</span><input type="text">
+<span>Username:</span><input type="text" placeholder="Username">
 <br>
-<span>Password:</span><input type="password">
+<span>Password:</span><input type="password" placeholder="Password">
 <br>
 <br>
-<input id="usernameInput" type="text" placeholder="Username">
 <button onClick="register()">Register</button>
 <p id="paragraph"><p>
 <br>
-<h4>Review</h4>
+<h3>Review</h3>
 <textarea cols="20" rows="10" placeholder="Please leave a review" id="reviewInput"></textarea>
 <br>
 <img src="https://sportscar365.com/wp-content/uploads/2024/06/9518fb94-5191-4fb6-bd54-25d279671c21-orginal.jpg"width="250" height="auto">
-<button onClick="displayAttribute()">Display Attribute</button>
-<p id="displayHere"></p>
 <br>
+<button onClick="displayAttribute()">Display Attribute</button>
+<span id="displayHere"></span>
 <button onClick = "displayAttribute()">Change Car</button>
 
 <p id="turnX" class="bold">
@@ -69,6 +86,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel tortor metu
 <button onClick="turnBold()">Turn Bold</button>
 <button onClick="turnItalic()">Turn Italic</button>
 <button onClick="addClass()">Add Class</button>
+
 <script src="script.js"></script>
 </body>
 </html>

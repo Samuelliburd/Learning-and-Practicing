@@ -38,6 +38,44 @@ document.getElementById("usernameInput").value;
 document.getElementById("title").innerHTML = "Learning and Practicing";
 
 
+function displayAttribute() {
+const img = document.querySelector("img");
+const imageLink = img. getAttribute("src");
+const p = document.querySelector ('p');
+p. innerText = imageLink;
+img.setAttribute("src",
+"https://www.topgear.com/sites/default/files/images/news-article/2021/06/514af9cc9cb2e64c58703910ef39e443/p90424815_highres_maisach-ger-2nd-june.jpg");
+}
+
+function turnBold() {
+const el = document.getElementById("turnX");
+el.setAttribute("class", "bold");
+}
+
+function turnItalic() {
+const el = document.getElementById("turnX");
+el.setAttribute("class", "italic");
+}
+
+function displayAttribute() {
+ const img = document.querySelector("img")
+const imgLink = img.getAttribute("src")
+const p =
+document.getElementById("displayHere");
+p.innerHTML = imgLink;
+}
+
+function toggleUnderline(){
+ const el = document.getElementById("turnX");
+ el.classList.toggle("underline");
+}
+
+function addClass(){
+ const el =
+document.getElementById("turnX");
+ el.classList.addElement("red-text")
+}
+
 // Notes
 
 // document.querySelector() is a flexible way to select the first matching element using any CSS selector.

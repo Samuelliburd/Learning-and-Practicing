@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-<title id="title">Learning and Practicing</title>
-<link rel="stylesheet" href="Learning%20and%20Practicing_files/style.css">
+<!doctype html>
+<html>
+<head>
+<title id="title">Learning and Practiccing</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Learning and Practicing</h1>
@@ -14,17 +14,17 @@
       <li>Eggs</li>
     </ul>
 <p>How many things do I need to buy? </p>
-<p>You need <span id="itemCount">4</span> items.</p>
+<p>You need <span id="itemCount"></span> items.</p>
 <br>
 <p>How many fruits are there on my list?</p>
-<button onclick="displayItem()">Show Answer</button>
+<button onClick=displayItem()>Show Answer</button>
 <br>
 <span class="numberOfFruits"></span>
 <br>
 <br>
 <p><strong>Airplane mode - <span class="onOrOff">Off</span></strong></p>
-<button onclick="onOrOff()">On</button>
-<button onclick="offOrOn()">Off</button>
+<button onClick="onOrOff()">On</button>
+<button onClick="offOrOn()">Off</button>
 <br>
 <br>
 <h2>Order Details</h2>
@@ -49,13 +49,26 @@
 <br>
 <br>
 <input id="usernameInput" type="text" placeholder="Username">
-<button onclick="register()">Register</button>
-<p id="paragraph"></p><p>
+<button onClick="register()">Register</button>
+<p id="paragraph"><p>
 <br>
-</p><h4>Review</h4>
+<h4>Review</h4>
 <textarea cols="20" rows="10" placeholder="Please leave a review" id="reviewInput"></textarea>
 <br>
-<img src="Learning%20and%20Practicing_files/2025-bmw-m3-110-66562ddceaf59.jpg" width="250" height="auto">
-<script src="Learning%20and%20Practicing_files/script.js"></script>
+<img src="https://sportscar365.com/wp-content/uploads/2024/06/9518fb94-5191-4fb6-bd54-25d279671c21-orginal.jpg"width="250" height="auto">
+<button onClick="displayAttribute()">Display Attribute</button>
+<p id="displayHere"></p>
+<br>
+<button onClick = "displayAttribute()">Change Car</button>
 
-</body></html>
+<p id="turnX" class="bold">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel tortor metus. Nulla ullamcorper vel nunc sed tincidunt. Sed arcu turpis, bibendum sed magna non, placerat sodales justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam gravida commodo quam, ut hendrerit lacus maximus eu. Donec sed aliquet neque, non aliquet lacus. Proin dignissim eros sit amet mi tincidunt tempus. Phasellus tempor, purus sit amet eleifend auctor, diam ex fermentum dui, vel ultricies dui justo a nulla. Aliquam viverra ipsum eget erat maximus, vel cursus odio pretium. Donec convallis quam non turpis sodales, quis sodales neque aliquet. Nunc facilisis, tellus vel rhoncus consequat, enim arcu pharetra odio, in aliquet arcu sapien vitae turpis. Aliquam ullamcorper sollicitudin porta.
+</p>
+<button onClick="toggleUnderline()">Toggle Underline</button>
+
+<button onClick="turnBold()">Turn Bold</button>
+<button onClick="turnItalic()">Turn Italic</button>
+<button onClick="addClass()">Add Class</button>
+<script src="script.js"></script>
+</body>
+</html>
